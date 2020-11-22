@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A926EFA1256AD83600C804FF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926EFA0256AD83600C804FF /* Location.swift */; };
+		A926EFA6256ADDC200C804FF /* LegalMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926EFA5256ADDC200C804FF /* LegalMoveView.swift */; };
+		A926EFAB256AE77300C804FF /* PieceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926EFAA256AE77300C804FF /* PieceColor.swift */; };
+		A926EFBB256AE82500C804FF /* CheckerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926EFBA256AE82500C804FF /* CheckerViewModel.swift */; };
+		A926EFCB256B10D200C804FF /* CheckerboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926EFCA256B10D200C804FF /* CheckerboardViewModel.swift */; };
+		A926EFD0256B17F600C804FF /* CheckerPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = A926EFCF256B17F600C804FF /* CheckerPattern.swift */; };
 		A929B4FD2569593F0078078C /* ChessaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929B4FC2569593F0078078C /* ChessaApp.swift */; };
 		A929B4FF2569593F0078078C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929B4FE2569593F0078078C /* ContentView.swift */; };
 		A929B5012569593F0078078C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A929B5002569593F0078078C /* Assets.xcassets */; };
 		A929B5042569593F0078078C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A929B5032569593F0078078C /* Preview Assets.xcassets */; };
 		A929B50F2569593F0078078C /* ChessaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929B50E2569593F0078078C /* ChessaTests.swift */; };
 		A929B51A2569593F0078078C /* ChessaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929B5192569593F0078078C /* ChessaUITests.swift */; };
-		A929B52C256965960078078C /* Checkerboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929B52B256965960078078C /* Checkerboard.swift */; };
-		A929B541256977160078078C /* Checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929B540256977160078078C /* Checker.swift */; };
+		A929B52C256965960078078C /* CheckerboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929B52B256965960078078C /* CheckerboardView.swift */; };
+		A929B541256977160078078C /* CheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929B540256977160078078C /* CheckerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A926EFA0256AD83600C804FF /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A926EFA5256ADDC200C804FF /* LegalMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalMoveView.swift; sourceTree = "<group>"; };
+		A926EFAA256AE77300C804FF /* PieceColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceColor.swift; sourceTree = "<group>"; };
+		A926EFBA256AE82500C804FF /* CheckerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerViewModel.swift; sourceTree = "<group>"; };
+		A926EFCA256B10D200C804FF /* CheckerboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerboardViewModel.swift; sourceTree = "<group>"; };
+		A926EFCF256B17F600C804FF /* CheckerPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerPattern.swift; sourceTree = "<group>"; };
 		A929B4F92569593F0078078C /* Chessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A929B4FC2569593F0078078C /* ChessaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessaApp.swift; sourceTree = "<group>"; };
 		A929B4FE2569593F0078078C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,9 +59,9 @@
 		A929B5152569593F0078078C /* ChessaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A929B5192569593F0078078C /* ChessaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessaUITests.swift; sourceTree = "<group>"; };
 		A929B51B2569593F0078078C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A929B52B256965960078078C /* Checkerboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkerboard.swift; sourceTree = "<group>"; };
+		A929B52B256965960078078C /* CheckerboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerboardView.swift; sourceTree = "<group>"; };
 		A929B5332569699B0078078C /* Chessa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chessa.entitlements; sourceTree = "<group>"; };
-		A929B540256977160078078C /* Checker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checker.swift; sourceTree = "<group>"; };
+		A929B540256977160078078C /* CheckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A926EFAF256AE7BD00C804FF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A929B52B256965960078078C /* CheckerboardView.swift */,
+				A926EFA5256ADDC200C804FF /* LegalMoveView.swift */,
+				A929B540256977160078078C /* CheckerView.swift */,
+				A926EFCF256B17F600C804FF /* CheckerPattern.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		A926EFB0256AE7C300C804FF /* view model */ = {
+			isa = PBXGroup;
+			children = (
+				A926EFBA256AE82500C804FF /* CheckerViewModel.swift */,
+				A926EFCA256B10D200C804FF /* CheckerboardViewModel.swift */,
+			);
+			name = "view model";
+			sourceTree = "<group>";
+		};
+		A926EFB1256AE7D200C804FF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A926EFAA256AE77300C804FF /* PieceColor.swift */,
+				A926EFA0256AD83600C804FF /* Location.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		A929B4F02569593E0078078C = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +181,9 @@
 		A929B52A256965830078078C /* gui */ = {
 			isa = PBXGroup;
 			children = (
-				A929B52B256965960078078C /* Checkerboard.swift */,
-				A929B540256977160078078C /* Checker.swift */,
+				A926EFB1256AE7D200C804FF /* model */,
+				A926EFB0256AE7C300C804FF /* view model */,
+				A926EFAF256AE7BD00C804FF /* view */,
 			);
 			name = gui;
 			sourceTree = "<group>";
@@ -275,10 +317,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A929B52C256965960078078C /* Checkerboard.swift in Sources */,
-				A929B541256977160078078C /* Checker.swift in Sources */,
+				A926EFCB256B10D200C804FF /* CheckerboardViewModel.swift in Sources */,
+				A926EFAB256AE77300C804FF /* PieceColor.swift in Sources */,
+				A929B52C256965960078078C /* CheckerboardView.swift in Sources */,
+				A926EFBB256AE82500C804FF /* CheckerViewModel.swift in Sources */,
+				A929B541256977160078078C /* CheckerView.swift in Sources */,
+				A926EFA1256AD83600C804FF /* Location.swift in Sources */,
 				A929B4FF2569593F0078078C /* ContentView.swift in Sources */,
 				A929B4FD2569593F0078078C /* ChessaApp.swift in Sources */,
+				A926EFD0256B17F600C804FF /* CheckerPattern.swift in Sources */,
+				A926EFA6256ADDC200C804FF /* LegalMoveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
