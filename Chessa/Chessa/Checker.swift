@@ -17,9 +17,7 @@ struct Checker : View, Hashable {
     var row: Int
     var column: Int
     let id: Int
-    
-    @State var dragOffset = CGSize.zero
-    
+        
     init(color: Color, row: Int, column: Int) {
         self.color = color
         self.row = row
@@ -29,16 +27,6 @@ struct Checker : View, Hashable {
     
     var body: some View {
         Circle().fill(color)
-            .gesture(
-                DragGesture()
-                    .onChanged { gesture in
-                        print("drag changed")
-                        dragOffset = gesture.translation
-                    }
-                    .onEnded { gesture in
-                        dragOffset = .zero
-                    }
-            )
     }
     
     func hash(into hasher: inout Hasher) {

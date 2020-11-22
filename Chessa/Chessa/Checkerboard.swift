@@ -68,6 +68,14 @@ struct Checkerboard : View {
     }
     
     @State private var pieces: [Checker]
+    @State private var dragOffset: (Int, CGSize)?
+    
+    private func offset(for piece: Checker) -> CGSize {
+        guard let (index, offset) = self.dragOffset,
+              index == piece.id
+              else { return .zero }
+        return offset
+    }
     
     var body: some View {
         ZStack {
@@ -78,12 +86,22 @@ struct Checkerboard : View {
                 let checkerWidth = geometry.size.width / CGFloat(Checkerboard.columns)
                 let checkerHeight = geometry.size.height / CGFloat(Checkerboard.rows)
                 ForEach(pieces, id: \.self) { piece in
-                    let xOffset = (checkerWidth * CGFloat(piece.column)) + piece.dragOffset.width
-                    let yOffset = (checkerHeight * CGFloat(Checkerboard.rows - 1 - piece.row)) + piece.dragOffset.height
+                    let pieceOffset = self.offset(for: piece)
+                    let xOffset = (checkerWidth * CGFloat(piece.column)) + pieceOffset.width
+                    let yOffset = (checkerHeight * CGFloat(Checkerboard.rows - 1 - piece.row)) + pieceOffset.height
                     piece
                         .frame(width: checkerWidth, height: checkerHeight, alignment: Alignment.center)
                         .offset(CGSize(width: xOffset,
                                        height: yOffset))
+                        .gesture(
+                            DragGesture()
+                                .onChanged { gesture in
+                                    dragOffset = (piece.id, gesture.translation)
+                                }
+                                .onEnded { gesture in
+                                    dragOffset = nil
+                                }
+                        )
                 }
             }
         }
